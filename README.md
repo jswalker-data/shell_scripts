@@ -1,2 +1,2 @@
-# bash_scripts
+# shell_scripts
 Bash scripts for general use
