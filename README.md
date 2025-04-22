@@ -6,22 +6,30 @@ This repository is a growing collection of useful shell scripts for automating t
 
 ## 📁 Current Scripts
 
-### 🔍 `blame_count` (Bash)
+### 🔍 `blame_count.sh` (Bash)
 
-> Counts the number of lines each contributor is responsible for in a Git repository.
+> Counts the number of lines each contributor is responsible for in one or more folders of a Git repository.
 
 **Usage:**
 
 ```bash
-bash blame_count
+bash blame_count.sh [folder1] [folder2] ...
 ```
 
-**Requirements:**
-- Run from the root of a Git repository
-- Requires `git` to be installed
+**Options:**
+
+- `--help` – Show usage instructions
+
+**Examples:**
+
+```bash
+bash blame_count.sh src
+bash blame_count.sh src tests
+```
 
 **Output:**
-A sorted list showing contributors and the number of lines attributed to each.
+
+A sorted list of contributors and the number of lines they are responsible for in each specified folder.
 
 ---
 
